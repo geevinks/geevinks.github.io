@@ -15,7 +15,7 @@ function addMoney() { // onClicker pressed add ClickGain
   money = money + clickGain;
 }
 function updateMoney(check=true) {//update html money txt
-  text = "$ZOV$ " + money;
+  text = "Zcoin " + money;
   element.money.innerHTML = text;
   if(check){checkPrices();}
 }
@@ -75,7 +75,7 @@ class ShopElement{
 	
 	//Update Button's txt price
 	updateText(){
-		this.text_element.innerHTML = "<b>" +'Z '+this.price+': ' + "</b>";}
+		this.text_element.innerHTML = "<b>" +'Z ' +this.price+ ' ' + 'уровень ' + this.purchaseLvl + ' ' + "</b>";}
 	
 	// Update Every new purchase
 	update(){
@@ -126,5 +126,3 @@ element.clicker.onclick = function() {
 	addMoney(); updateMoney(); 
 	element.clicker.disabled = false;
 };
-
-
