@@ -9,6 +9,7 @@ body{
 
 .button, .clicker {
 	/*Disable selection and drag*/
+	border-radius: 20%;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -36,18 +37,17 @@ body{
 			================= SHOP =================
 */
 .button{
-	width: 200;height: 50;
+	width: 150;height: 75;
 	position: absolute;
-	left: 87%;
 	transform: translate(-50%, -50%);
 }
 .button:disabled{
 	background-color: #B3B3B3;
 }
 
-#b1{top:22%}
-#b2{top:32%}
-#b3{top:42%}
+#b1{top:90%; left:50%}
+#b2{top:90%; left:25%}
+#b3{top:90%; left:75%}
 
 
 /*
@@ -63,16 +63,16 @@ body{
 	top: 50%; left: 50%;/*               à 50%/50% du parent référent */
 	transform: translate(-50%, -50%);/*  décalage de 50% de sa propre taille */
 	/* Animation */
-	transition: width 0.3s, height 0.3s;
+	transition: width 0.7s, height 0.7s;
 }
 .clicker:hover {
-	width:225px;
-	height:225px;
+	width:300px;
+	height:175px;
 }
 .clicker:active {
-	transition: width 0.05s, height 0.05s;
-	width:200px;
-	height:200px;
+	transition: width 0.1s, height 0.1s;
+	width:175px;
+	height:300px;
 }
 
 /*
@@ -84,7 +84,7 @@ body{
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-  margin-left: 20px;
+  margin-left: 15px;
   color: #FFFFFF;
-  font-size: 50;
+  font-size: 25;
 }
