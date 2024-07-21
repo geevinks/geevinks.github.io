@@ -12,11 +12,49 @@
 		<img id="logo-clicker" src="img/money_logo.png" draggable=false class="clicker"></img>
 	</button>
 	<!-- SHOP BUTTONS -->
-	<button id="b1" class="button" disabled><b></b>x2 монет за клик</button>
-	<button id="b2" class="button" disabled><b></b>+5 в секунду</button>
-	<button id="b3" class="button" disabled><b></b>x2</button>
 	
 	<!-- Load Javascript -->
 	<script src="script.js"></script>
 </body>
 </html>
+
+<hea>
+  <meta charset="utf-8">
+  <title>Button</title>
+  <style>
+    button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: moveButton 2s infinite;
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    @keyframes moveButton {
+      0% {
+        transform: translateX(-50%);
+      }
+      50% {
+        transform: translateX(-55%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</hea>
+<body>
+  <form action="magaz.html">
+    <button>качалка</button>
+  </form>
+</body>
