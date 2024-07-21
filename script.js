@@ -75,7 +75,7 @@ class ShopElement{
 	
 	//Update Button's txt price
 	updateText(){
-		this.text_element.innerHTML = "<b>" +'$'+this.price+': ' + "</b>";}
+		this.text_element.innerHTML = "<b>" +'Z '+this.price+': ' + "</b>";}
 	
 	// Update Every new purchase
 	update(){
